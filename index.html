@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="text-center my-4">Products List</h1>
+    <div class="w-75 h-75  m-auto my-5">
+
+        <div class="group my-2">
+            <label for="product-name"> product name:</label>
+            <input type="text" id="productName" class="form-control mt-2">
+            <div id="alert-massage" class="alert-massage alert-danger py-1 fs-5 px-2 d-none">
+           name should be start with capital letter and contain min two letter and max 8 letter......
+            </div>
+        </div>
+        <div class="group my-2">
+            <label for="product-price"> product price:</label>
+            <input type="number" id="productPrice" class="form-control  mt-2">
+            <div id="alert-massage-number" class="alert-massage alert-danger py-1 fs-5 px-2 d-none">
+                price should contains  2 numbers to 8 numbers        ......
+                 </div>
+        </div>
+        <div class="group my-2">
+            <label for="product-category"> product category:</label>
+            <input type="text" id="productCategory" class="form-control mt-2">
+            <div id="alert-massage-cate" class="alert-massage alert-danger py-1 fs-5 px-2 d-none">
+               categorey should containt about the name of product......
+                 </div>
+        </div>
+        <div class="group my-2">
+            <label for="product-desc"> product desc:</label>
+            <textarea type="text" id="productDesc" class="form-control mt-2"></textarea>
+            <div id="alert-massage-desc" class="alert-massage alert-danger py-1 fs-5 px-2 d-none">
+                please write your description......
+                  </div>
+        </div>
+        <button class="btn btn-info float-end mt-3" id="btnProduct">add product</button>
+<input type="text"  class="form-control mt-5" onkeyup="search(this.value)" placeholder="Searh Product By Name .........">
+</div>
+    <table class="table w-75 m-auto text-center">
+        <thead>
+<th>Name</th>
+<th>price</th>
+<th>category</th>
+<th>description</th>
+<th></th>
+<th></th>
+</thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
